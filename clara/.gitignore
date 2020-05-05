@@ -1,0 +1,5 @@
+*.zip
+.kobo/
+plato/
+firmware.patch
+plato.sh
