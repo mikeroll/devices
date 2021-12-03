@@ -2,17 +2,17 @@
 set -euo pipefail
 
 hardware="kobo7"
-firmware_month="Mar2020"
-firmware_package="kobo-update-4.20.14622.zip"
+firmware_month="Nov2021"
+firmware_package="kobo-update-4.30.18838.zip"
 
-plato_version="0.8.5"
+plato_version="0.9.22"
 plato_package="plato-${plato_version}.zip"
 
 sources=(
     "https://kbdownload1-a.akamaihd.net/firmwares/${hardware}/${firmware_month}/${firmware_package}"
     "https://github.com/baskerville/plato/releases/download/${plato_version}/${plato_package}"
-    "https://raw.githubusercontent.com/baskerville/plato/${plato_version}/launchers/standalone/plato.sh"
-    "https://raw.githubusercontent.com/baskerville/plato/${plato_version}/launchers/standalone/firmware.patch"
+    "https://raw.githubusercontent.com/baskerville/plato/${plato_version}/contrib/plato.sh"
+    "https://raw.githubusercontent.com/baskerville/plato/${plato_version}/contrib/firmware.patch"
 )
 
 cleanup() {
